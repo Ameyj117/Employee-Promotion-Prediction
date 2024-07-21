@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Status</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        html, body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            height: 100%; /* Ensure height is 100% */
+            overflow: hidden; /* Prevent scroll bars */
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("https://www.betterup.com/hs-fs/hubfs/Blog%20Images/reasons%20to%20promote%20an%20employee/team-celebrating-reasons-to-promote-an-employee.jpeg?width=1920&name=team-celebrating-reasons-to-promote-an-employee.jpeg");
+            background-color: #cccccc;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.8; /* Adjust opacity for translucency */
+            z-index: -1; /* Places the background behind the content */
+        }
+        .container {
+            position: relative;
+            z-index: 1; /* Ensures the text is above the background */
+            padding: 20px; /* Adds some padding for better readability */
+            text-align: center; /* Centers text within the container */
+        }
+        h3.big {
+            line-height: 1.8;
+            color: black; /* Ensures the text color is black */
+            font-weight: bold; /* Makes the text bolder */
+            font-size: 24px; /* Adjusts font size for better visibility */
+            margin: 20px; /* Adds margin around the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">Employee Promotion Prediction Using ML</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/predict">Predict</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <div class="container">
+        <br>
+        <h3 class="big">
+            Eligibility status: {{predictionText}}.
+        </h3>
+    </div>
+</body>
+</html>

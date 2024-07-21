@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg");
+            background-size: cover;
+            color: #f0f0f0; /* Light text color */
+        }
+        .navbar {
+            background-color: #222; /* Dark background for navbar */
+        }
+        .navbar-inverse .navbar-nav > li > a {
+            color: #9d9d9d; /* Lighter color for navbar links */
+        }
+        .navbar-inverse .navbar-nav > .active > a {
+            color: white; /* Active link color */
+            background-color: #000; /* Active link background color */
+        }
+        h3.big {
+            line-height: 1.6;
+        }
+        .container {
+            margin-top: 50px; /* Space at the top */
+            text-align: center; /* Center align text and buttons */
+        }
+        .btn-container {
+            margin-top: 30px;
+        }
+        .btn-custom {
+            margin: 10px;
+            font-size: 16px;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">Employee Promotion Prediction Using ML</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/home">Home</a></li>
+          <li class="active"><a href="/about">About</a></li>
+          <li><a href="/predict">Predict</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <h1><strong>Promotion Prediction Using ML</strong></h1>
+        <br>
+        <h3 class="big">
+          Our project leverages machine learning to predict employee promotions, providing organizations with valuable insights into career advancement opportunities. By analyzing various factors such as departmental performance, education, training history, and individual achievements, our model predicts the likelihood of an employee's promotion. This data-driven approach helps companies identify high-potential employees, optimize their talent management strategies, and foster a more motivated and effective workforce. Embracing this technology can enhance decision-making processes and support career development initiatives within the organization. 
+        </h3>
+        <div class="btn-container">
+            <a href="/home" class="btn btn-primary btn-custom">Home</a>
+            <a href="/predict" class="btn btn-success btn-custom">Predict</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
